@@ -1,0 +1,32 @@
+classDiagram
+    class Base {
+        <<abstract>>
+        +log(message) void*
+    }
+    
+    class debug_logger {
+        +log(message) void
+    }
+    
+    class info_logger {
+        +log(message) void
+    }
+    
+    class error_logger {
+        +log(message) void
+    }
+    
+    class LoggerFactory {
+        +create_logger(loglevel: string) Base
+    }
+    
+    Base <|-- debug_logger
+    Base <|-- info_logger
+    Base <|-- error_logger
+    LoggerFactory ..> Base : creates
+    LoggerFactory ..> debug_logger : creates
+    LoggerFactory ..> info_logger : creates
+    LoggerFactory ..> error_logger : creates
+    
+    note for Base "Abstract base class\ndefining logger interface"
+    note for LoggerFactory "Factory class that creates\nconcrete logger instances"
