@@ -4,7 +4,7 @@ from Desktop import Desktop, SonyDesktop, HPDesktop, DellDesktop
 
 class DesktopBuilder(ABC):
     def __init__(self):
-        self.desktop = None
+        pass
 
     @abstractmethod
     def processor(self):

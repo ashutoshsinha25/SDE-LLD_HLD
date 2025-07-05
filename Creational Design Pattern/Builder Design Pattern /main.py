@@ -30,5 +30,5 @@ if __name__ == '__main__':
     desktop.display()
 
 # Output
-# Sony Desktop
-# HP Desktop
+# Sony Desktop - CPU: AMD Ryzen 7, RAM: 32GB, Storage: 2TB SSD, GPU: AMD Radeon RX 6700XT, OS: Windows 11
+# HP Desktop - CPU: Intel i5, RAM: 8GB, Storage: 1TB HDD, GPU: Intel Integrated Graphics, OS: Windows 10
